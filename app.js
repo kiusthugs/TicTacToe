@@ -160,7 +160,16 @@ function displayResult(playerWon) {
 }
 
 //close modal
-closeModal.addEventListener('click', () => modal.style.display = 'none')
+closeModal.addEventListener('click', () => {
+    modal.style.display = 'none'
+
+    //After modal closes, dont allow players to place more markers
+    space.forEach((el) => {
+        if(!el.classList.contains('placed')) {
+            el.classList.add('placed')
+        }
+    })
+})
 
 // Determine turn and check for winning conditions
 function play(turn, playObj) {
