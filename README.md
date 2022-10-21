@@ -2,4 +2,4 @@
 
 ## Demo
 
-https://app.netlify.com/sites/tictactoekp/overview
+https://tictactoekp.netlify.app/
